@@ -5,29 +5,66 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Starbucks Coffee Korea</title>
-
+  <!-- 오픈그래프 영역 -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Starbucks" />
   <meta property="og:title" content="Starbucks Coffee Korea" />
   <meta property="og:description" content="스타벅스는 세계에서 가장 큰 다국적 커피 전문점으로, 64개국에서 총 23,187개의 매점을 운영하고 있습니다." />
   <meta property="og:image" content="./images/starbucks_seo.jpg" />
   <meta property="og:url" content="https://starbucks.co.kr" />
-
+  <!-- 트위터카드 영역 -->
   <meta property="twitter:card" content="summary" />
   <meta property="twitter:site" content="Starbucks" />
   <meta property="twitter:title" content="Starbucks Coffee Korea" />
   <meta property="twitter:description" content="스타벅스는 세계에서 세상에 마상에" />
   <meta property="twitter:image" content="./images/starbucks_seo.jpg" />
   <meta property="twitter:url" content="https://starbucks.co.kr" />
-
+  <!-- 공용영역 -->
   <link rel="icon" href="./favicon.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <!-- CSS 호출 -->
   <link rel="stylesheet" href="./css/main.css" />
 </head>
 <body>
-  Hello World!
-  <div class="badge">
-    <img src="./images/badge1.jpg" alt="Badge" />
+
+  <!-- HEADER -->
+  <!-- 여기는 해더영역이다! 기능적으로 어떤 역할을 수행하는 것은 아님. 영역구분 -->
+ <header> 
+  <!-- 영역안에 공간을 만들어서, 가운데 정렬을 할 수 있도록...inner라는 div를 별도로 만들어 주었다. -->
+  <div class="inner">
+
+    <!-- 상대경로!! 도메인/index.html 의 앞뒤가 생략된 버전임. 즉 로고 누르면 메인화면으로 간다! -->
+    <a href="/" class="logo">
+      <img src="./images/starbucks_logo.png" alt="STARBUCKS" />
+    </a>
+
+    <div class="sub-menu">
+      <ul class="menu">
+        <li>
+          <a href="/signin">Sign In</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">My Starbucks</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">Customer Service & Ideas</a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">Find a Store</a>
+        </li>
+      </ul>
+      <div class="search">
+        <input type="text" />
+        <div class="material-icons">search</div>
+      </div>
+    </div>
+
   </div>
+ </header>
+
 </body>
 </html>
